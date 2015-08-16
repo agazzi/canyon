@@ -389,8 +389,8 @@ table th,
 table td {
     padding: .3em;
     margin: .1em;
-    vertical-align: top;
-    text-shadow: 0 1px 0 #fff;
+    /*vertical-align: top;*/
+    /*text-shadow: 0 1px 0 #fff;*/
 }
 
 /* 3.4 */
@@ -399,7 +399,7 @@ table {
 }
 
 thead th {
-    border-right: 1px solid #fff;
+    /*border-right: 1px solid #fff;*/
 }
 
 th {
@@ -463,6 +463,10 @@ table.nospacing {
 
 table.nopadding tr th, table.nopadding tr td {
     padding: 0;
+}
+
+th {
+    background: #fafafa;
 }
 
 th.left, td.left {
@@ -1155,7 +1159,81 @@ div#tablestatistics table {
 #topmenucontainer {
     padding-<?php echo $right; ?>: 1em;
     width: 100%;
-    display: none;  /* DON'T FORGET TO DISABLED IT */
+    /*display: none;   DON'T FORGET TO DISABLED IT */
+}
+
+#topmenucontainer {
+    position: relative;
+    left: -3px;
+    padding: 6px;
+    background: #fafafa;
+    border-top: 1px solid #f1f4f5;
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+#topmenucontainer #topmenu li.active a.tabactive {
+    background: #946059 !important;
+    color: #fff;
+}
+
+th a {
+    text-decoration: none;
+}
+
+th {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #76838F;
+    text-shadow: none;
+}
+
+#topmenucontainer #topmenu li {
+    border: none !important;
+}
+
+#topmenucontainer #topmenu li a:hover {
+    background-color: #fff;
+}
+
+#topmenucontainer #topmenu li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #76838F;
+    text-shadow: none;
+}
+
+#topmenucontainer #topmenu li a img {
+    display: none;
+}
+
+.ajax_notification div.success,
+.ajax_notification div.notice,
+.ajax_notification div.error {
+    margin: 0 !important;
+}
+
+.ajax_notification {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.ajax_notification div.success:before,
+.ajax_notification div.notice:before,
+.ajax_notification div.error:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #253137;
+    opacity: 0.6;
 }
 
 #serverinfo {
@@ -1163,12 +1241,17 @@ div#tablestatistics table {
     left: -3px;
     background: #fff;
     font-family: 'Open Sans', sans-serif;
-    padding: 18px;
-    color: #000;
+    padding: 18.5px;
+    color: #76838F;
     width: 10000px;
     overflow: hidden;
     -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.08);
     box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+#serverinfo > span.separator,
+#serverinfo > img.icon.ic_s_db.item {
+    display: none;
 }
 
 #serverinfo a,
