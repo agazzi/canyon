@@ -13,7 +13,7 @@ if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
 }
 
 /** @var PMA_Theme $pmaTheme */
-$pmaTheme = $_SESSION['PMA_Theme'];
+$pmaTheme = $theme;
 $headerImg = $pmaTheme->getImgPath('pmd/Header.png');
 $headerLinkedImg = $pmaTheme->getImgPath('pmd/Header_Linked.png');
 $minusImg = $pmaTheme->getImgPath('pmd/minus.png');

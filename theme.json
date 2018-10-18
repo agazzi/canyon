@@ -1,0 +1,8 @@
+{
+    "name": "Canyon",
+    "version": "0.1",
+    "description": "Modern flat template made exclusively for phpmyadmin",
+    "author": "agazzi",
+    "url": "https://github.com/agazzi/canyon",
+    "supports": ["4.8"]
+}
